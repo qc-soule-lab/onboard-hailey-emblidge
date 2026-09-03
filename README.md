@@ -27,8 +27,9 @@ If `gh` is **not installed** ("command not found"), use a token instead:
 
 1. **Clone this repo:**
 
+       mkdir -p ~/repos && cd ~/repos
        git clone https://github.com/qc-soule-lab/onboard-hailey-emblidge.git
-       cd onboard-hailey-emblidge
+       cd ~/repos/onboard-hailey-emblidge
 
 2. **Launch Claude Code:**
 

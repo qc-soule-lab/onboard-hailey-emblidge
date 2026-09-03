@@ -13,8 +13,9 @@ They launched `claude`, so their `qc-soule-lab` Team seat is working. Have them 
 
 ### 2. Clone the project repo and enter it
 ```bash
-cd ~ && git clone https://github.com/qc-soule-lab/axial-timeseries
-cd "$(basename https://github.com/qc-soule-lab/axial-timeseries .git)"
+mkdir -p ~/repos && cd ~/repos
+git clone https://github.com/qc-soule-lab/axial-timeseries
+cd ~/repos/axial-timeseries
 ```
 
 ### 3. Run the lab bootstrap (from inside the project repo)
@@ -72,7 +73,7 @@ Help them create a throwaway branch, make a trivial change, commit (pytest first
 ### 8. Hand off to the onramp (the science curriculum)
 Before project work, they take the lab's guided curriculum — "From the map to the tidal signal":
 ```bash
-cd ~ && git clone -b 001-coding-onramp-v1 https://github.com/qc-soule-lab/student-onramp.git
+mkdir -p ~/repos && cd ~/repos && git clone -b 001-coding-onramp-v1 https://github.com/qc-soule-lab/student-onramp.git
 cd student-onramp && uv sync && claude
 ```
 In that Claude session: `/model claude-sonnet-4-6`, then type **`assess me`**. It assesses, builds
